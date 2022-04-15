@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +19,7 @@ public class Teste {
         driver.get("http://www.google.com.br");
         driver.findElement(By.name("q")).sendKeys("Teste Alan");
 
+        Assert.assertEquals("teste", "teste");
         // Logout
         driver.quit();
     }
